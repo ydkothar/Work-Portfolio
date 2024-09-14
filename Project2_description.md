@@ -9,7 +9,7 @@ The goal of this project was to develop a diffuse interface model for a system o
 - **Numerical methods**: Lattice Boltzmann Method and Finite Difference Method
 - **Post-processing**: Python, MATLAB, ParaView
 
-Note: Due to future work, the code is not publicly posted, but it is available upon request.
+Note: Due to ongoing work for future publications, the code is not publicly available but can be provided upon request.
 
 ## Results
 ## 1. Adsorption dynamics of surfactants on the interface of oil drop dispersed in water for Langmuir isotherm:
