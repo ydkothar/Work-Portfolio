@@ -54,10 +54,9 @@
             list-style: none;
             padding: 10px;
             border-radius: 5px;
-            min-width: 200px; /* Adjusted width for dropdown */
+            min-width: 200px;
         }
 
-        /* Dropdown menu items styling */
         nav ul ul li {
             margin: 0;
             padding: 0;
@@ -67,7 +66,7 @@
         nav ul ul li a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px; /* Adjusted padding for better spacing */
+            padding: 10px 20px;
             display: block;
         }
 
@@ -88,16 +87,6 @@
 
         ul {
             padding-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
         .video-container {
@@ -122,6 +111,25 @@
                 max-width: 100%;
             }
         }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -137,7 +145,7 @@
 
     <section id="objective">
         <h2>Objective</h2>
-        <p>The objective of this project was to simulate the flow of oil in microwells initially filled with water, with the goal of comparing the performance of implicit and explicit Volume of Fluid (VOF) models in ANSYS Fluent. The focus was on analyzing the sharpness of the oil-water interface and the differences in modeling accuracy between the two approaches.</p>
+        <p>The objective of this project was to simulate the flow of oil in microwells initially filled with water, comparing the performance of implicit and explicit Volume of Fluid (VOF) models in ANSYS Fluent. The focus was on analyzing the sharpness of the oil-water interface and the differences in modeling accuracy between the two approaches.</p>
     </section>
 
     <section id="approach">
@@ -147,7 +155,7 @@
             <li><strong>Mesh:</strong> Structured grid (Quadrilateral elements)</li>
             <li><strong>Model:</strong> Multiphase model - Volume of Fluid (Implicit & Explicit formulations)</li>
             <li><strong>Boundary conditions:</strong> Inlet - Oil mass flow rate = 0.004 kg/s, outlet pressure = 0 Pa, internal walls = no-slip condition</li>
-            <li><strong>Initial conditions:</strong> Phase 1 (i.e., water) volume fraction = 1 and Phase 2 (i.e., oil) volume fraction = 0</li>
+            <li><strong>Initial conditions:</strong> Phase 1 (water) volume fraction = 1, Phase 2 (oil) volume fraction = 0</li>
         </ul>
     </section>
 
@@ -166,11 +174,11 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <p>The oil and water phases are represented by red and blue colors respectively. The explicit formulation of the VOF model captures the sharp interface between the oil and water phases with greater accuracy and minimal diffusion compared to the implicit formulation of the VOF model.</p>
+        <p>The oil and water phases are represented by red and blue colors respectively. The explicit VOF model formulation captures the sharp interface between oil and water phases with greater accuracy and minimal diffusion compared to the implicit formulation.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Yash's CFD Portfolio</p>
+        <p>&copy; 2024 Yash's Work Portfolio</p>
     </footer>
 </body>
 
