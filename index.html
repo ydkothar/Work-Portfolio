@@ -37,12 +37,14 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            padding: 10px 20px;
         }
 
         nav ul li:hover > ul {
             display: block;
         }
 
+        /* Dropdown menu styling */
         nav ul ul {
             display: none;
             position: absolute;
@@ -52,17 +54,20 @@
             list-style: none;
             padding: 10px;
             border-radius: 5px;
+            min-width: 200px; /* Adjusted width for dropdown */
         }
 
+        /* Dropdown menu items styling */
         nav ul ul li {
             margin: 0;
             padding: 0;
+            width: 100%;
         }
 
         nav ul ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 10px 20px; /* Adjusted padding for better spacing */
             display: block;
         }
 
