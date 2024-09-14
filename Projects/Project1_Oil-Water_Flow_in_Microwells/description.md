@@ -4,7 +4,7 @@
 The objective of this project was to simulate the flow of oil in microwells initially filled with water, with the goal of comparing the performance of implicit and explicit Volume of Fluid (VOF) models in ANSYS Fluent. The focus was on analyzing the sharpness of the oil-water interface and the differences in modeling accuracy between the two approaches.
 
 ## Approach
-- **Software**: Ansys Workbench - Ansys SpaceClaim, Ansys Fluent
+- **Software**: Ansys Workbench - Ansys SpaceClaim, Ansys Meshing, Ansys Fluent
 - **Mesh**: Structured grid (Quadrilateral elements)
 - **Model**: Multiphase model - Volume of Fluid (Implicit & Explicit formulations)
 - **Boundary conditions**: Inlet - Oil mass flow rate = 0.004 kg/s, outlet pressure = 0 Pa, internal walls = no-slip condition
