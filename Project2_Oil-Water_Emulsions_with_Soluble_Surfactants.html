@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil-Water Emulsions with Soluble Surfactants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        pre code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Oil-Water Emulsions with Soluble Surfactants</h1>
+    </header>
+
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>The goal of this project was to develop a diffuse interface model for a system of immiscible liquids (oil and water) and soluble surfactants. The objective was to accurately predict the reduction in surface tension caused by surfactants, a key factor in the enhanced oil recovery (EOR) processes.</p>
+    </section>
+
+    <section id="approach">
+        <h2>Approach</h2>
+        <ul>
+            <li><strong>CFD code development:</strong> FORTRAN</li>
+            <li><strong>Model:</strong> Phase field model (i.e., Diffuse interface model)</li>
+            <li><strong>Numerical methods:</strong> Lattice Boltzmann Method and Finite Difference Method</li>
+            <li><strong>Post-processing:</strong> Python, MATLAB, ParaView</li>
+        </ul>
+        <p><strong>Note:</strong> Due to future work, the code is not publicly posted, but it is available upon request.</p>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+
+        <h3>1. Adsorption Dynamics of Surfactants on Oil-Water Interface</h3>
+        <p>Surfactant adsorption on oil-water interface:</p>
+        <img src="Project2_images/Oil-Water_drop_surfactant_adsorption.png" alt="Surfactant adsorption on oil-water interface">
+        <p>
+            Here, <em>&phi;</em> is the relative density difference between oil and water. It means that <em>&phi; = -1</em>, <em>&phi; = 0</em>, and <em>&phi; = 1</em> represent the water phase, oil-water interface, and oil phase, respectively. <em>&psi;</em> is the volume fraction of the surfactant, and <em>&psi;<sub>b</sub></em> is the bulk surfactant volume fraction.
+        </p>
+        <p>
+            The results show that the surfactant distribution over the drop interface is more uniform for higher bulk surfactant volume fraction (Figure (b) vs. Figure (d)).
+        </p>
+
+        <h3>2. Surface Tension Reduction with Different Surfactants</h3>
+        <p>Surfactant tension reduction for different isotherms:</p>
+        <img src="Project2_images/Surface_tension_reduction.png" alt="Surfactant tension reduction for different isotherms">
+        <p>
+            Here, <em>&psi;<sub>0</sub></em> is the surfactant volume fraction at the interface of oil drops dispersed in water. Higher values of <em>&lambda;<sub>2</sub></em> describe the type of surfactant with dense packing of surfactant molecules, whereas lower values represent the loosely packed arrangement of surfactant molecules. <em>&sigma;<sub>0</sub></em> is the surface tension of the pure system (i.e., oil-water mixture).
+        </p>
+        <p>
+            The reduction of surface tension compared to the pure system is expressed as:
+            <pre><code>&dfrac;&Delta;&sigma;&sigma;<sub>0</sub> = &dfrac;&sigma;(&psi;<sub>0</sub>) - &sigma;<sub>0</sub> &sigma;<sub>0</sub></code></pre>
+            where <em>&alpha;</em> is a fitting coefficient for the analytical equation of surface tension.
+        </p>
+        <p>
+            The solid curves and markers represent the analytical and numerical solutions, respectively. As the parameter <em>&lambda;<sub>2</sub></em>, representing the compactness of surfactant molecules, increases, the surface tension decreases significantly for the same surfactant volume fraction. These results follow experimental observations of the binary liquids-surfactant system for Langmuir isotherm, where surface tension reductions range from 30−60% of <em>&sigma;<sub>0</sub></em>.
+        </p>
+    </section>
+
+<!--  
+    <footer>
+        <p>&copy; 2024 Yash's Work Portfolio</p>
+    </footer>
+-->  
+</body>
+
+</html>
