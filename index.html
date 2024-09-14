@@ -24,16 +24,50 @@
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
+            position: relative;
             margin-right: 20px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #005f99;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav ul ul li a:hover {
+            background-color: #007BFF;
         }
 
         section {
@@ -77,7 +111,14 @@
         <h1>Welcome to Yash's CFD Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#">Projects</a>
+                    <ul>
+                        <li><a href="Project1_Oil-Water_Flow_in_Microwells.html">Oil-Water Flow in Microwells</a></li>
+                        <li><a href="Project2_Oil-Water_Emulsions_with_Soluble_Surfactants.html">Oil-Water Emulsions with Soluble Surfactants</a></li>
+                        <li><a href="Project3_Flow_Through_Right-Angle_Bend.html">Flow Through Right-Angle Bend</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills & Tools</a></li>
             </ul>
