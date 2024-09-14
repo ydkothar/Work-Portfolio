@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oil-Water Flow in Microwells - CFD simulation comparing implicit and explicit VOF models using Ansys Fluent.">
-    <meta name="keywords" content="CFD, Oil-Water Flow, Microwells, VOF, Ansys Fluent">
-    <meta name="author" content="Yash">
     <title>Oil-Water Flow in Microwells</title>
     <style>
         body {
@@ -24,15 +21,58 @@
             text-align: center;
         }
 
-        nav {
-            text-align: center;
-            margin-top: 20px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
-        nav a {
-            color: #005f99;
+        nav ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            padding: 10px 20px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        /* Dropdown menu styling */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #005f99;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 200px; /* Adjusted width for dropdown */
+        }
+
+        /* Dropdown menu items styling */
+        nav ul ul li {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        nav ul ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px; /* Adjusted padding for better spacing */
+            display: block;
+        }
+
+        nav ul ul li a:hover {
+            background-color: #007BFF;
         }
 
         section {
@@ -44,6 +84,10 @@
 
         h1, h2, h3 {
             color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         footer {
@@ -84,11 +128,12 @@
 <body>
     <header>
         <h1>Oil-Water Flow in Microwells</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Projects</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <a href="index.html">&larr; Back to Portfolio</a>
-    </nav>
 
     <section id="objective">
         <h2>Objective</h2>
@@ -111,13 +156,13 @@
         <div class="video-container">
             <h3>Evolution of oil volume fraction for the implicit VOF model:</h3>
             <video controls>
-                <source src="animations/Implicit_VOF.mp4" type="video/mp4" alt="Implicit VOF Model Simulation">
+                <source src="animations/Implicit_VOF.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <h3>Evolution of oil volume fraction for the explicit VOF model:</h3>
             <video controls>
-                <source src="animations/Explicit_VOF.mp4" type="video/mp4" alt="Explicit VOF Model Simulation">
+                <source src="animations/Explicit_VOF.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -125,7 +170,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Yash's CFD Portfolio - Oil-Water Flow in Microwells</p>
+        <p>&copy; 2024 Yash's CFD Portfolio</p>
     </footer>
 </body>
 
